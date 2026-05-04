@@ -14,62 +14,7 @@
   </head>
   <body>
     <div class="page-shell">
-      <header class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">robotfailuredetection.com</p>
-          <h1>State of the art literature review for robot failure detection</h1>
-          <p class="lede">
-            A focused benchmark table for comparing datasets, modalities, and failure coverage across
-            real robots and simulation.
-          </p>
-          <div class="hero-actions">
-            <a href="#benchmarks" class="button button-primary">Explore benchmarks</a>
-            <a href="#notes" class="button button-secondary">Read the interpretation</a>
-          </div>
-        </div>
-
-        <aside class="hero-panel" aria-label="Summary">
-          <div class="panel-card">
-            <span class="panel-label">Coverage</span>
-            <strong>Real robot + simulation</strong>
-          </div>
-          <div class="panel-card">
-            <span class="panel-label">Modalities</span>
-            <strong>Images, video</strong>
-          </div>
-          <div class="panel-card">
-            <span class="panel-label">Failure types</span>
-            <strong>Execution, planning</strong>
-          </div>
-        </aside>
-      </header>
-
       <main>
-        <section class="intro-grid" id="notes">
-          <article class="intro-card">
-            <h2>What this page is</h2>
-            <p>
-              A concise literature review centered on the datasets that currently function as
-              benchmarks for robotic failure detection.
-            </p>
-          </article>
-          <article class="intro-card">
-            <h2>How to read it</h2>
-            <p>
-              The table emphasizes environment, modality, dataset size, and the failure modes each
-              benchmark covers. The release-year column uses the information provided in your source
-              material.
-            </p>
-          </article>
-          <article class="intro-card">
-            <h2>Main takeaway</h2>
-            <p>
-              The field is still benchmark-light: most datasets are image-based, with execution
-              failures better represented than broader planning failures.
-            </p>
-          </article>
-        </section>
-
         <section class="table-section" id="benchmarks">
           <div class="section-heading">
             <p class="eyebrow">Benchmarks</p>
@@ -147,21 +92,6 @@
               </tbody>
             </table>
           </div>
-        </section>
-
-        <section class="insight-grid">
-          <article class="insight-card">
-            <h2>Coverage gap</h2>
-            <p>There is still a scarcity of publicly packaged failure-detection datasets compared with the scale of robot manipulation literature.</p>
-          </article>
-          <article class="insight-card">
-            <h2>Modality trend</h2>
-            <p>Most released benchmarks are image-centric; only RoboFail in this set includes video.</p>
-          </article>
-          <article class="insight-card">
-            <h2>Benchmark use</h2>
-            <p>These datasets can support failure detectors, reward models, and reproducible evaluations of robot policies.</p>
-          </article>
         </section>
       </main>
     </div>
