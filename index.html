@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A curated literature review and benchmark table for robot failure detection." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Robot Failure Detection" />
+    <meta property="og:description" content="A curated literature review and benchmark table for robot failure detection." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://robotfailuredetection.com" />
+    <title>Robot Failure Detection</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">robotfailuredetection.com</p>
+          <h1>State of the art literature review for robot failure detection</h1>
+          <p class="lede">
+            A focused benchmark table for comparing datasets, modalities, and failure coverage across
+            real robots and simulation.
+          </p>
+          <div class="hero-actions">
+            <a href="#benchmarks" class="button button-primary">Explore benchmarks</a>
+            <a href="#notes" class="button button-secondary">Read the interpretation</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Summary">
+          <div class="panel-card">
+            <span class="panel-label">Coverage</span>
+            <strong>Real robot + simulation</strong>
+          </div>
+          <div class="panel-card">
+            <span class="panel-label">Modalities</span>
+            <strong>Images, video</strong>
+          </div>
+          <div class="panel-card">
+            <span class="panel-label">Failure types</span>
+            <strong>Execution, planning</strong>
+          </div>
+        </aside>
+      </header>
+
+      <main>
+        <section class="intro-grid" id="notes">
+          <article class="intro-card">
+            <h2>What this page is</h2>
+            <p>
+              A concise literature review centered on the datasets that currently function as
+              benchmarks for robotic failure detection.
+            </p>
+          </article>
+          <article class="intro-card">
+            <h2>How to read it</h2>
+            <p>
+              The table emphasizes environment, modality, dataset size, and the failure modes each
+              benchmark covers. The release-year column uses the information provided in your source
+              material.
+            </p>
+          </article>
+          <article class="intro-card">
+            <h2>Main takeaway</h2>
+            <p>
+              The field is still benchmark-light: most datasets are image-based, with execution
+              failures better represented than broader planning failures.
+            </p>
+          </article>
+        </section>
+
+        <section class="table-section" id="benchmarks">
+          <div class="section-heading">
+            <p class="eyebrow">Benchmarks</p>
+            <h2>Robotic Failure Detection Datasets Benchmark</h2>
+          </div>
+
+          <div class="table-wrap" role="region" aria-label="Robotic failure detection datasets benchmark table" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Environment</th>
+                  <th>File Type</th>
+                  <th>Sample Size</th>
+                  <th>Release Date</th>
+                  <th>Note</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Dataset">UR5-Fail</td>
+                  <td data-label="Environment">Real robot arm (UR5)</td>
+                  <td data-label="File Type">Images</td>
+                  <td data-label="Sample Size">940 samples</td>
+                  <td data-label="Release Date"><span class="badge badge-success">2026</span></td>
+                  <td data-label="Note">Execution and planning failures</td>
+                  <td data-label="Link"><a href="https://huggingface.co/collections/paulpacaud/ur5-fail-robot-failure-detection-benchmark" target="_blank" rel="noreferrer">HuggingFace</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Dataset">BridgeDataV2-Fail</td>
+                  <td data-label="Environment">Real robot arm (WidowX250)</td>
+                  <td data-label="File Type">Images</td>
+                  <td data-label="Sample Size">16K samples</td>
+                  <td data-label="Release Date"><span class="badge badge-success">2026</span></td>
+                  <td data-label="Note">Execution and planning failures</td>
+                  <td data-label="Link"><a href="https://huggingface.co/collections/paulpacaud/bridgedatav2-fail-robot-failure-detection-benchmark" target="_blank" rel="noreferrer">HuggingFace</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Dataset">RLBench-Fail</td>
+                  <td data-label="Environment">Simulator robot arm (Franka Emika Panda)</td>
+                  <td data-label="File Type">Images</td>
+                  <td data-label="Sample Size">21K samples</td>
+                  <td data-label="Release Date"><span class="badge badge-success">2026</span></td>
+                  <td data-label="Note">Execution and planning failures</td>
+                  <td data-label="Link"><a href="https://huggingface.co/collections/paulpacaud/rlbench-fail-robot-failure-detection-benchmark" target="_blank" rel="noreferrer">HuggingFace</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Dataset">I-Fail-Sense DROID Bench</td>
+                  <td data-label="Environment">Real robot arm</td>
+                  <td data-label="File Type">Images</td>
+                  <td data-label="Sample Size">1K</td>
+                  <td data-label="Release Date"><span class="badge badge-success">2025</span></td>
+                  <td data-label="Note">Does not contain failures. Only execution success examples.</td>
+                  <td data-label="Link"><a href="https://huggingface.co/datasets/ACIDE/DROID_bench_1K" target="_blank" rel="noreferrer">HuggingFace</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Dataset">RoboFail</td>
+                  <td data-label="Environment">Real robot arm (UR5)</td>
+                  <td data-label="File Type">Images, Video</td>
+                  <td data-label="Sample Size">183 samples</td>
+                  <td data-label="Release Date"><span class="badge badge-success">2023</span></td>
+                  <td data-label="Note">Execution and planning failures</td>
+                  <td data-label="Link"><a href="https://www.cs.columbia.edu/~liuzeyi/reflect_data/" target="_blank" rel="noreferrer">Personal website</a></td>
+                </tr>
+                <tr>
+                  <td data-label="Dataset">AHA</td>
+                  <td data-label="Environment">Simulator robot arm (Franka Emika Panda)</td>
+                  <td data-label="File Type">Images</td>
+                  <td data-label="Sample Size">21K samples</td>
+                  <td data-label="Release Date"><span class="badge badge-danger">Not released</span></td>
+                  <td data-label="Note">Execution failures</td>
+                  <td data-label="Link"><a href="https://github.com/NVlabs/AHA" target="_blank" rel="noreferrer">GitHub codebase</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="insight-grid">
+          <article class="insight-card">
+            <h2>Coverage gap</h2>
+            <p>There is still a scarcity of publicly packaged failure-detection datasets compared with the scale of robot manipulation literature.</p>
+          </article>
+          <article class="insight-card">
+            <h2>Modality trend</h2>
+            <p>Most released benchmarks are image-centric; only RoboFail in this set includes video.</p>
+          </article>
+          <article class="insight-card">
+            <h2>Benchmark use</h2>
+            <p>These datasets can support failure detectors, reward models, and reproducible evaluations of robot policies.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
